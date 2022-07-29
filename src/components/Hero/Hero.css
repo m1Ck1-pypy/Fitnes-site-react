@@ -1,0 +1,191 @@
+.hero {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-h {
+    padding: 2rem;
+    padding-top: 1.5rem;
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.right-h {
+    flex: 1;
+    position: relative;
+    background-color: var(--orange);
+}
+
+.hero__slider {
+    margin-top: 4rem;
+    background-color: #363d42;
+    border-radius: 4rem;
+    width: fit-content;
+    padding: 20px 13px;
+    text-transform: uppercase;
+    color: #fff;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-items: flex-start;
+    font-weight: 500;
+}
+
+.hero__slider .slider__share {
+    position: absolute;
+    background-color: var(--orange);
+    width: 5.4rem;
+    height: 80%;
+    left: 8px;
+    border-radius: 3rem;
+    z-index: 1;
+}
+
+.hero__slider .slider__text {
+    z-index: 2;
+}
+
+.hero__maintext {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;  
+    text-transform: uppercase;
+    font-size: 4.5rem;
+    font-weight: 600;
+    color: #fff;
+    text-overflow: inherit;
+}
+
+.maintext__description {
+    font-size: 1rem;
+    font-weight: 300;
+    text-transform: none;
+    letter-spacing: 1px;
+    width: 80%;
+}
+
+.hero__statistics {
+    display: flex;
+    gap: 2rem;
+}
+
+.hero__statistics .statictics__block {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero__statistics .statictics__block span:nth-child(1) {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.hero__statistics .statictics__block span:nth-child(2) {
+    color: var(--gray);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.hero__buttons {
+    display: flex;
+    gap: 1rem;
+    font-weight: 500;
+}
+
+.hero__buttons .btn:nth-child(1) {
+    color: #fff;
+    background-color: var(--orange);
+    width: 8rem;
+}
+
+.hero__buttons .btn:nth-child(2) {
+    color: #fff;
+    background-color: transparent;
+    width: 8rem;
+    border: 2px solid var(--orange);
+    text-align: center;
+}
+
+.right-h .btn {
+    position: absolute;
+    right: 3rem;
+    top: 2rem;
+    color: #333;
+}
+
+.right-h .heart-rate {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: var(--darkGrey);
+    width: fit-content;
+    padding: 1rem;
+    align-items: flex-start;
+    border-radius: 5px;
+    position: absolute;
+    right: 4rem;
+    top: 7rem;
+    box-shadow: 7px 7px 5px -3px rgba(0, 0, 0, 0.5);
+}
+
+.right-h heart-rate img {
+    width: 2rem;
+}
+
+.right-h .heart-rate span:nth-child(2) {
+    color: var(--gray);
+}
+
+.right-h .heart-rate span:nth-child(3) {
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+.right-h .hero-image {
+    position: absolute;
+    top: 13rem;
+    right: 13rem;
+    width: 23rem;
+}
+
+.right-h .hero-image-back {
+    position: absolute;
+    top: 4rem;
+    right: 25rem;
+    z-index: -1;
+    width: 15rem;
+}
+
+.calories {
+    display: flex;
+    gap: 2rem;
+    background-color: var(--caloryCard);
+    border-radius: 5px;
+    padding: 1rem;
+    width: fit-content;
+    position: absolute;
+    top: 32rem;
+    right: 34rem;
+    box-shadow: 7px 7px 5px -3px rgba(0, 0, 0, 0.5);
+}
+
+.calories img {
+    width: 3rem;
+}
+
+.calories .calories__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.calories .calories__text span:nth-child(1) {
+    color: var(--gray);
+    font-weight: 500;
+}
+
+.calories .calories__text span:nth-child(2) {
+    color: var(--orange);
+    font-size: 1.6rem;
+}

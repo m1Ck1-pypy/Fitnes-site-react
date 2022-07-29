@@ -1,0 +1,25 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 10rem;
+    height: 3rem;
+}
+
+.header__menu {
+    display: flex;
+    gap: 2rem;
+}
+
+.header__menu .mainMenu__item {
+    color: #fff;
+    font-weight: 500;
+    transition: all .3s ease;
+}
+
+.header__menu .mainMenu__item:hover {
+    color: var(--purple);
+    cursor: pointer;
+}
