@@ -1,0 +1,80 @@
+.join {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.join__left {
+    position: relative;
+    width: 50%;
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.join__left_textUp::before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 0;
+    width: 200px;
+    height: 5px;
+    background: var(--planCard);
+    border-radius: 4px;
+}
+
+.join__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.join__right .join__email {
+    display: flex;
+    gap: 3rem;
+    background-color: hsla(14, 0%, 42%, 1);
+    padding: 1rem 3rem;
+}
+
+.join__right .join__email input {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    outline: none;
+}
+
+.join__right .join__email input::-webkit-input-placeholder {
+    color: var(--orange);
+}
+
+.join__right .join__email .btn__join {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    color: #fff;
+    background-color: var(--orange);
+    font-size: 1rem;
+}
+
+.join__right .join__email .form__input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.join__right .join__email .form__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.join__right .join__email label {
+    color: var(--orange);
+    font-size: 3rem;
+}
