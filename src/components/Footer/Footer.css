@@ -13,6 +13,23 @@
     background-color: var(--lightgray);
 }
 
+.footer__blur1 {
+    width: 26rem;
+    height: 12rem;
+    bottom: 2rem;
+    left: 28em;
+    filter: blur(130px);
+}
+
+.footer__blur2 {
+    width: 26rem;
+    height: 12rem;
+    bottom: 2rem;
+    right: 28rem;
+    filter: blur(130px);
+    background: hsla(10, 72%, 50%, 0.6);
+}
+
 .footer {
     position: relative;
     display: flex;

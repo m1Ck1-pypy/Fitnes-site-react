@@ -8,6 +8,9 @@ import Logo from '../../assets/logo.png';
 const Footer = () => {
     return (
         <div className="footer__container">
+            <div className="blur footer__blur1"></div>
+            <div className="blur footer__blur2"></div>
+
             <div className="footer">
                 <div className="footer__social">
                     <img src={GitHub} alt="" />
