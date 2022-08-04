@@ -6,6 +6,7 @@ import hero_image_back from '../../assets/hero_image_back.png';
 import Heart from '../../assets/heart.png';
 import Calories from '../../assets/calories.png'
 import { motion } from 'framer-motion';
+import NumberCounter from 'number-counter';
 
 
 const Hero = () => {
@@ -50,15 +51,21 @@ const Hero = () => {
                 {/* figures */}
                 <div className="hero__statistics">
                     <div className="statictics__block">
-                        <span>+140</span>
+                        <span>
+                            <NumberCounter end={140} start={100} delay="4" preFix="+" />
+                        </span>
                         <span>expert coachs</span>
                     </div>
                     <div className="statictics__block">
-                        <span>+930</span>
+                        <span>
+                            <NumberCounter end={948} start={800} delay="4" preFix="+" />
+                        </span>
                         <span>members joined</span>
                     </div>
                     <div className="statictics__block">
-                        <span>+47</span>
+                        <span>
+                            <NumberCounter end={48} start={0} delay="2" preFix="+" />
+                        </span>
                         <span>fitness programs</span>
                     </div>
                 </div>
@@ -75,26 +82,26 @@ const Hero = () => {
             <div className="right-h">
                 <button className="btn">Join Now</button>
 
-                <motion.div 
+                <motion.div
                     className="heart-rate"
                     transition={transition}
                     initial={{ right: '-1rem' }}
                     whileInView={{ right: '4rem' }}
-                    >
+                >
                     <img src={Heart} alt="" />
                     <span>Heart Rate</span>
                     <span>116 bpm</span>
                 </motion.div>
 
                 <img src={hero_image} alt="" className="hero-image" />
-                <motion.img 
-                    src={hero_image_back} alt="" 
+                <motion.img
+                    src={hero_image_back} alt=""
                     className="hero-image-back"
                     initial={{ right: '18rem' }}
                     whileInView={{ right: '25.5rem' }}
                     transition={transition} />
 
-                <motion.div 
+                <motion.div
                     className="calories"
                     initial={{ right: "45rem" }}
                     whileInView={{ right: "35rem" }}
