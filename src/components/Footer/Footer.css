@@ -64,3 +64,15 @@
 .footer__container .footer .footer__logo img {
     width: 300px;
 }
+
+@media screen and (max-width: 768px) {
+    .footer__container .footer {
+        gap: 1.5rem;
+    }
+    .footer__social {
+        gap: 2rem;
+    }
+    .footer__container .footer .footer__logo img {
+        width: 225px;
+    }
+}

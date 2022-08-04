@@ -6,7 +6,7 @@ import whiteTick from '../../assets/whiteTick.png';
 
 const Plans = () => {
     return (
-        <div className="plans__container">
+        <div className="plans__container" id="plans">
             <div className="blur plans__blur1"></div>
             <div className="blur plans__blur2"></div>
 
@@ -37,7 +37,10 @@ const Plans = () => {
                             <span className="seeMore__test">See more benefits<span className="seeMore__arrow">&#8594;</span></span>
                         </div>
 
-                        <button className="btn">Join Now</button>
+                        <div className="plans__btn">
+                            <button className="btn btn_custom">Join Now</button>
+                        </div>
+
                     </div>
                 ))}
             </div>

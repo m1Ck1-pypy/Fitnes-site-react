@@ -78,3 +78,51 @@
 .category .join-now img {
     width: 1rem;
 }
+
+@media screen and (max-width: 1024px) {
+    .programs__categories {
+        display: grid;
+        grid-template-columns: repeat(2, 300px);
+        justify-items: center;
+        gap: 2rem;
+    }
+    .programs__categories .category {
+        padding: 1rem;
+        width: 90%;
+        gap: .9rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .programs__header {
+        flex-direction: column;
+        gap: .9rem;
+        align-items: center;
+        font-size: 1.5rem;
+        margin-top: 2rem;
+    }
+    .programs__categories {
+        display: grid;
+        grid-template-columns: repeat(1, 200px);
+        justify-items: center;
+        gap: .9rem;
+    }
+    .programs__categories .category {
+        padding: 1rem;
+        width: 100%;
+        gap: .9rem;
+    }
+    .programs__categories .category svg {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .programs__categories .category .category__heading {
+        font-size: .8rem;
+    }
+    .programs__categories .category .category__details {
+        font-size: .8rem;
+    }
+    .category .join-now span {
+        font-size: .8rem;
+    }
+}

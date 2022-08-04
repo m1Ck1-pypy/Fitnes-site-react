@@ -20,6 +20,35 @@
 }
 
 .header__menu .mainMenu__item:hover {
-    color: var(--purple);
+    color: var(--orange);
     cursor: pointer;
+}
+
+.header .toggleMunu {
+    position: fixed;
+    top: 1rem;
+    right: 1.5rem;
+    background: var(--appColor);
+    height: fit-content;
+    padding: 10px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    z-index: 99;
+}
+
+
+@media screen and (max-width: 768px) {
+    .header .header__menu {
+        position: fixed;
+        top: 2rem;
+        right: 1.5rem;
+        flex-direction: column;
+        gap: 1.5rem;
+        z-index: 99;
+        background-color: var(--appColor);
+        margin: 0;
+        padding: 2rem 50px 2rem 25px;
+        border-radius: 30px;
+    }
 }

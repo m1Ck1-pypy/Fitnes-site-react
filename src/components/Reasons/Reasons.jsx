@@ -60,7 +60,7 @@ const Reasons = () => {
                     </div>
                 </div>
 
-                <span style={{ color: "var(--gray)", fontWeight: "normal", paddingTop: "40px" }}>
+                <span className="reasons__sponsors">
                     out partners
                 </span>
 
